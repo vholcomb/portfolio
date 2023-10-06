@@ -41,12 +41,25 @@ const Home = () => (
     </div>
     <div className={styles.projects}>
       <h2>Projects and Contributions</h2>
+      <p className={styles.oldProjects}>For older projects, see <a href="https://www.linkedin.com/in/vicky-holcomb/details/projects/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       <div className={styles.grid}>
         <ProjectCard
           href='https://github.com/sthomas1618/react-crane'
           image='react-crane.png'
           description='A React component library for highly customizable dropdowns.  Contributed to the overall project and making the dropdowns meet WCAG 2.0 guidelines.'
           title='react-crane'
+        />
+        <ProjectCard
+          href='https://craft-supply-inventory.vercel.app/'
+          image='csp.png'
+          description='An early stage React app for keeping track of art and craft supplies.'
+          title='crafty-supply-inventory'
+        />
+        <ProjectCard
+          href='https://www.civitaslearning.com/platform/planning/'
+          image='civitas.png'
+          description='See work done for my previous employer, specifically the planning and scheduling applications.'
+          title='Civitas Learning'
         />
       </div>
     </div>

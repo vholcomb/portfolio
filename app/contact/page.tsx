@@ -4,6 +4,7 @@ import { css } from '@emotion/react'
 import EmailIcon from '@mui/icons-material/Email'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 const contact = css`
   text-align: center;
@@ -70,6 +71,11 @@ const iconWrapper = css`
   justify-content: center;
 `
 
+const secondIcon = css`
+  padding-right: 26px;
+  padding-top: 12px;
+`
+
 export default function ContactPage() {
   return (
     <div css={contact}>
@@ -94,6 +100,19 @@ export default function ContactPage() {
           <div css={iconWrapper}>
             <DownloadForOfflineIcon />
             <a href="/VickyHolcombResume.pdf" download="VickyHolcombResume.pdf" target="_blank" rel="noreferrer">Vicky Holcomb Resume</a>
+          </div>
+        </div>
+        <div css={card}>
+          <h2>Github</h2>
+          <div>
+            <div css={iconWrapper}>
+              <GitHubIcon />
+              <a href="https://github.com/vicky-holcomb" target="_blank" rel="noopener noreferrer">Professional</a>
+            </div>
+            <div css={[iconWrapper, secondIcon]}>
+              <GitHubIcon />
+              <a href="https://github.com/vholcomb78" target="_blank" rel="noopener noreferrer">Personal</a>
+            </div>
           </div>
         </div>
       </div>
