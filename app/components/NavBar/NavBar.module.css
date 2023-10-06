@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 101%;
+  background: linear-gradient(90deg,#18181b,#18181b),linear-gradient(90deg,#00dc82,#1de0b1,#36e4da);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  border-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.menu {
+  display: flex;
+  padding: 12px;
+}
+
+.menu li {
+  display: flex;
+  padding: 12px 24px;
+}
+
+.menu li:hover {
+  border-radius: 8px;
+  background: linear-gradient(90deg,#00dc82,#1de0b1,#36e4da);
+  color: black;
+}

@@ -1,95 +1,56 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import ProjectCard from './components/ProjectCard/ProjectCard'
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+const Home = () => (
+  <main className={styles.main}>
+    <div className={styles.header}>
+      <div>
+        <h1>{`Hi! I'm Vicky Holcomb`}</h1>
+        <div className={styles.description}>I am a senior full stack engineer with over 12 years of professional experience and a passion for making user-friendly websites.</div>
       </div>
+      <div>
+      <Image
+        priority
+        src="/images/profile.jpg"
+        className={styles.borderCircle}
+        height={144}
+        width={144}
+        alt=""
+      />
+      </div>
+    </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <div className={styles.container}>
+      <h2>Skills</h2>
+      <div className={styles.skills}>Some of my skills include:</div>
+      <ul className={styles.skillList}>
+        <li><strong>Front-End:</strong> React, TypeScript, JavaScript, CSS (including LESS, Emotion CSS, CSS Modules), AngularJS, Design Frameworks like Material UI</li>
+        <li><strong>Back-End: </strong> GraphQL, Apollo, Node.js</li>
+        <li><strong>Java Ecosystem:</strong> Java, Kotlin, Spring Boot, Spring Cloud</li>
+        <li>C# & .NET</li>
+        <li><strong>Databases:</strong> Oracle, PostgreSQL, MS SQL Server, Prisma</li>
+        <li><strong>Testing:</strong> Junit, Jasmine, Jest</li>
+        <li>Microservice architecture & Docker</li>
+        <li>Attention to Detail</li>
+        <li>Project & Team Management</li>
+        <li>Documentation & Technical Writing</li>
+        <li>Problem Solving</li>
+        <li>Self-Starter</li>
+      </ul>
+    </div>
+    <div className={styles.projects}>
+      <h2>Projects and Contributions</h2>
+      <div className={styles.grid}>
+        <ProjectCard
+          href='https://github.com/sthomas1618/react-crane'
+          image='react-crane.png'
+          description='A React component library for highly customizable dropdowns.  Contributed to the overall project and making the dropdowns meet WCAG 2.0 guidelines.'
+          title='react-crane'
         />
       </div>
+    </div>
+  </main>
+)
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+export default Home
