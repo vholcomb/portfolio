@@ -32,6 +32,7 @@ const Home = () => (
         <li><strong>Databases:</strong> Oracle, PostgreSQL, MS SQL Server, Prisma</li>
         <li><strong>Testing:</strong> Junit, Jasmine, Jest</li>
         <li>Microservice architecture & Docker</li>
+        <li>Accessible and mobile first development - specialize in making UI's usable for everyone</li>
         <li>Attention to Detail</li>
         <li>Project & Team Management</li>
         <li>Documentation & Technical Writing</li>
