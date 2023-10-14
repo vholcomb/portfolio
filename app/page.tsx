@@ -7,7 +7,7 @@ const Home = () => (
     <div className={styles.header}>
       <div>
         <h1>{`Hi! I'm Vicky Holcomb`}</h1>
-        <div className={styles.description}>I am a senior full stack engineer with over 12 years of professional experience and a passion for making user-friendly websites.</div>
+        <div className={styles.description}>I am a senior full stack engineer with over 12 years of professional experience and a passion for making user-friendly applications.</div>
       </div>
       <div>
       <Image
@@ -25,14 +25,16 @@ const Home = () => (
       <h2>Skills</h2>
       <div className={styles.skills}>Some of my skills include:</div>
       <ul className={styles.skillList}>
-        <li><strong>Front-End:</strong> React, TypeScript, JavaScript, CSS (including LESS, Emotion CSS, CSS Modules), AngularJS, Design Frameworks like Material UI</li>
-        <li><strong>Back-End: </strong> GraphQL, Apollo, Node.js</li>
+        <li><strong>Front-End:</strong> React (CRA and Next.js), TypeScript, JavaScript, CSS (including LESS, Emotion CSS, CSS Modules), AngularJS, and other frameworks/libraries including Material UI, Bootstrap, Knockout, and Handlebars</li>
+        <li><strong>Back-End/API: </strong> GraphQL, Apollo, Node.js, REST, SOAP</li>
         <li><strong>Java Ecosystem:</strong> Java, Kotlin, Spring Boot, Spring Cloud</li>
         <li>C# & .NET</li>
-        <li><strong>Databases:</strong> Oracle, PostgreSQL, MS SQL Server, Prisma</li>
-        <li><strong>Testing:</strong> Junit, Jasmine, Jest</li>
+        <li><strong>Databases:</strong> Oracle, PostgreSQL, MS SQL Server, MySQL, Prisma, Redis, familiar with MongoDB</li>
+        <li><strong>Testing:</strong> Junit, Jasmine, Jest, Nunit, Storybook and Chromatic for UI regression testing, Deployment previews in Netlify</li>
         <li>Microservice architecture & Docker</li>
+        <li>Experience with both AWS and Microsoft Azure</li>
         <li>Accessible and mobile first development - specialize in making UI's usable for everyone</li>
+        <li>Other things I have experience with, but not professionally: Python, PHP, Ruby on Rails</li>
         <li>Attention to Detail</li>
         <li>Project & Team Management</li>
         <li>Documentation & Technical Writing</li>
