@@ -7,7 +7,7 @@ const Home = () => (
     <div className={styles.header}>
       <div>
         <h1>{`Hi! I'm Vicky Holcomb`}</h1>
-        <div className={styles.description}>I am a senior full stack engineer with over 12 years of professional experience and a passion for making user-friendly applications.</div>
+        <div className={styles.description}>I am an experienced Full Stack Engineer with over 12 years of industry expertise, dedicated to creating high-availability, user-friendly software solutions.</div>
       </div>
       <div>
       <Image
@@ -25,21 +25,26 @@ const Home = () => (
       <h2>Skills</h2>
       <div className={styles.skills}>Some of my skills include:</div>
       <ul className={styles.skillList}>
-        <li><strong>Front-End:</strong> React (CRA and Next.js), TypeScript, JavaScript, CSS (including LESS, Emotion CSS, CSS Modules), AngularJS, and other frameworks/libraries including Material UI, Bootstrap, Knockout, and Handlebars</li>
+        <li><strong>Front-End:</strong> React (CRA and Next.js), TypeScript, JavaScript, CSS (including LESS, Emotion CSS, CSS Modules), jQuery, AngularJS, Webpack, and other frameworks/libraries including Material UI, Bootstrap, Knockout, and Handlebars</li>
         <li><strong>Back-End/API: </strong> GraphQL, Apollo, Node.js, REST, SOAP</li>
         <li><strong>Java Ecosystem:</strong> Java, Kotlin, Spring Boot, Spring Cloud</li>
         <li>C# & .NET</li>
         <li><strong>Databases:</strong> Oracle, PostgreSQL, MS SQL Server, MySQL, Prisma, Redis, familiar with MongoDB</li>
-        <li><strong>Testing:</strong> Junit, Jasmine, Jest, Nunit, Storybook and Chromatic for UI regression testing, Deployment previews in Netlify</li>
-        <li>Microservice architecture & Docker</li>
+        <li><strong>Testing & Code Quality:</strong> Junit, Jasmine, Jest, Nunit, ESLint, Storybook and Chromatic for UI regression testing, deployment previews in Netlify</li>
+        <li>Microservice architecture</li>
+        <li>Docker & container orchestration</li>
         <li>Experience with both AWS and Microsoft Azure</li>
         <li>Accessible and mobile first development - specialize in making UI's usable for everyone</li>
-        <li>Other things I have experience with, but not professionally: Python, PHP, Ruby on Rails</li>
+        <li>Deployment: CI/CD, Jenkins, Bamboo, and GitHub Actions</li>
+        <li>Terraform</li>
+        <li>Other languages I have experience with, but not professionally: Python, PHP, Ruby on Rails</li>
         <li>Attention to Detail</li>
         <li>Project & Team Management</li>
         <li>Documentation & Technical Writing</li>
         <li>Problem Solving</li>
         <li>Self-Starter</li>
+        <li>Strong Communication Skills</li>
+        <li>Agile Methodologies</li>
       </ul>
     </div>
     <div className={styles.projects}>
@@ -63,6 +68,18 @@ const Home = () => (
           image='civitas.png'
           description='See work done for my previous employer, specifically the planning and scheduling applications.'
           title='Civitas Learning'
+        />
+        <ProjectCard
+          href='https://alliance2build.com/'
+          image='a2b.png'
+          description='Contract work for the Alliance 2 Build application.'
+          title='Alliance 2 Build'
+        />
+        <ProjectCard
+          href='https://www.exlservice.com/insights/solution-sheet/careradius'
+          image='exl.png'
+          description='Work done at EXL Service (formerly Landacorp) on their platforms'
+          title='CareRadius and CareAffiliate'
         />
       </div>
     </div>
