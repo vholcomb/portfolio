@@ -8,7 +8,7 @@ const Home = () => (
       <div>
         <h1>{`Hi! I'm Vicky Holcomb`}</h1>
         <div className={styles.headerWrapper}>
-          <div className={styles.description}>I am an Principal Software Engineer and Technical leader with over 13 years of industry expertise, dedicated to creating high-availability, user-friendly software solutions.  I am a Full-Stack Developer with Front-End Expertise in React, TypeScript, GraphQL, and web accessibility.</div>
+          <div className={styles.description}>With over 13 years of full-stack software engineering experience, I specialize in building scalable, high-traffic applications that deliver accessible and seamless user experiences. I excel at tackling complex challenges, mentoring teams, and delivering innovative solutions that exceed expectations.</div>
           <Image
             priority
             src="/images/profile.jpg"
@@ -23,19 +23,21 @@ const Home = () => (
 
     <div className={styles.container}>
       <h2>Skills</h2>
-      <div className={styles.skills}>Some of my skills include:</div>
       <ul className={styles.skillList}>
         <li><strong>Front-End:</strong> React, Next.js, TypeScript, JavaScript, Redux, CSS (including LESS, Emotion CSS, CSS Modules, Styled Components), jQuery, Angular, Webpack, Babel and other frameworks/libraries including Material UI, React Hook Form, TanStack Query, TanStack Table, Bootstrap, Knockout, and Handlebars</li>
         <li><strong>API: </strong> GraphQL, Apollo, Express.js, REST, SOAP</li>
         <li><strong>Backend:</strong> C#, .NET & .NET Core, Entity Framework,  Node.js, Java, Kotlin, Spring Boot, Spring Cloud</li>
-        <li><strong>Databases:</strong> Oracle, PostgreSQL, MS SQL Server, MySQL, Prisma, Redis, CosmosDB, MongoDB</li>
-        <li><strong>Testing & Code Quality:</strong> Junit, Jasmine, Jest, Nunit, ESLint, Enzyme, React Testing Library, Storybook and Chromatic for UI regression testing, deployment previews in Netlify</li>
+        <li><strong>Databases:</strong> Oracle, PostgreSQL, MS SQL Server, MySQL, Prisma, Redis, Cosmos, MongoDB</li>
+        <li><strong>Testing & Code Quality:</strong> Junit, Jasmine, Jest, Nunit, ESLint, Enzyme, React Testing Library, SonarQube, Husky, Prettier, ESLint, Storybook and Chromatic for UI regression testing, deployment previews in Netlify</li>
+        <li><strong>Monitoring & Analytics:</strong> Google Analytics, Mixpanel, Sentry, New Relic, Grafana, Azure App Insights, CloudWatch</li>
+        <li><strong>Security:</strong> OAuth, Auth0, JWT, SAML, CORS, CSRF, XSS Prevention, Security Audits, SOC 2</li>
+        <li><strong>Deployment:</strong> Azure, AWS, CI/CD, Jenkins, Bamboo, Terraform, GitHub Actions, Vercel, Render</li>
         <li>Microservice architecture</li>
         <li>Docker & container orchestration</li>
-        <li>Experience with both AWS and Microsoft Azure</li>
-        <li>Accessible and mobile first development - specialize in making UI's usable for everyone</li>
-        <li>Deployment: CI/CD, Jenkins, Bamboo, Terraform, and GitHub Actions</li>
-        <li>Other languages I have experience with, but not professionally: Vue, Python, PHP, Ruby on Rails</li>
+        <li>Accessible and mobile first development - specialize in making UI's usable for everyone - adhering to WCAG and Section 508 guidelines and VPAT authoring</li>
+        <li>Experience working with and creating design systems and tools like Figma and Zeplin</li>
+        <li>Other languages I have experience with, but have not used professionally: Vue, Python, PHP, Ruby on Rails</li>
+        <li>Proficient in creating and enforcing coding standards and best practices</li>
         <li>Attention to Detail</li>
         <li>Project & Team Management</li>
         <li>Documentation & Technical Writing</li>
@@ -58,7 +60,7 @@ const Home = () => (
         <ProjectCard
           href='https://vue-shop-site.onrender.com/products'
           image='two-trees.png'
-          description='A full stack Vue project using a MongoDB database and Express.js backend. Deployed in Render.'
+          description='A full stack project using Vue with a MongoDB database and Express.js backend. Deployed in Render.'
           title='Two Trees Olive Oil Vue Project'
         />
         <ProjectCard
