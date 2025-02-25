@@ -107,11 +107,7 @@ export default function ContactPage() {
           <div>
             <div css={iconWrapper}>
               <GitHubIcon />
-              <a href="https://github.com/vicky-holcomb" target="_blank" rel="noopener noreferrer">Professional</a>
-            </div>
-            <div css={[iconWrapper, secondIcon]}>
-              <GitHubIcon />
-              <a href="https://github.com/vholcomb78" target="_blank" rel="noopener noreferrer">Personal</a>
+              <a href="https://github.com/vholcomb" target="_blank" rel="noopener noreferrer">github.com/vholcomb</a>
             </div>
           </div>
         </div>
