@@ -20,6 +20,9 @@
 
 .menu li {
   display: flex;
+}
+
+.menu a {
   padding: 12px 24px;
 }
 
