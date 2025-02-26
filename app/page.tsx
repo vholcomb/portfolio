@@ -64,16 +64,17 @@ const Home = () => (
           title='Two Trees Olive Oil Vue Project'
         />
         <ProjectCard
+          href='/civitas'
+          image='civitas.png'
+          description='See work done for my previous employer, specifically the planning and scheduling applications.'
+          sameTab
+          title='Civitas Learning'
+        />
+        <ProjectCard
           href='https://craft-supply-inventory.vercel.app/'
           image='csp.png'
           description='An early stage React app for keeping track of art and craft supplies.'
           title='crafty-supply-inventory'
-        />
-        <ProjectCard
-          href='https://www.civitaslearning.com/platform/planning/'
-          image='civitas.png'
-          description='See work done for my previous employer, specifically the planning and scheduling applications.'
-          title='Civitas Learning'
         />
         <ProjectCard
           href='https://alliance2build.com/'

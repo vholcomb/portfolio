@@ -5,15 +5,16 @@ type ProjectCardProps = {
   description: string
   href: string
   image: string
+  sameTab?: boolean
   title: string
 }
 
-const ProjectCard = ({ description, href, image, title }: ProjectCardProps) => {
+const ProjectCard = ({ description, href, image, sameTab = false, title }: ProjectCardProps) => {
   return (
     <a
       href={href}
       className={styles.card}
-      target="_blank"
+      target={sameTab ?  "" : "_blank"}
       rel="noopener noreferrer"
     >
       <Image

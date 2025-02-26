@@ -1,0 +1,41 @@
+.page {
+  margin: 4rem;
+  line-height: 1.3rem;
+}
+
+.page h1 {
+  padding-bottom: 16px;
+}
+
+.page h2, .page h3 {
+  padding-bottom: 12px;
+}
+
+.page h4 {
+  padding-bottom: 8px;
+  padding-top: 16px;
+}
+
+.example h3 {
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+
+.storybook {
+  display: flex;
+  padding-top: 12px;
+  font-weight: 700;
+}
+
+.storybook a {
+  text-decoration: underline;
+  padding-left: 8px;
+}
+
+.projectList {
+  padding: 12px 24px;
+}
+
+.schedulerHeader {
+  padding-top: 24px;
+}
