@@ -52,15 +52,17 @@ const Home = () => (
       <p className={styles.oldProjects}>For older projects, see <a href="https://www.linkedin.com/in/vicky-holcomb/details/projects/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       <div className={styles.grid}>
         <ProjectCard
-          href='https://github.com/sthomas1618/react-crane'
+          href='https://sthomas1618.github.io/react-crane'
           image='react-crane.png'
           description='A React component library for highly customizable dropdowns.  Contributed to the overall project and making the dropdowns meet WCAG 2.0 guidelines.'
+          sourceCode='https://github.com/sthomas1618/react-crane'
           title='react-crane'
         />
         <ProjectCard
           href='https://vue-shop-site.onrender.com/products'
           image='two-trees.png'
-          description='A full stack project using Vue with a MongoDB database and Express.js backend. Deployed in Render.'
+          description='A full stack project using Vue with a MongoDB database and Express.js backend. Deployed in Render, which spins apps down when they are not in use, so it may take a minute to spin up.'
+          sourceCode='https://github.com/vholcomb/vue-shop-site'
           title='Two Trees Olive Oil Vue Project'
         />
         <ProjectCard
@@ -74,6 +76,7 @@ const Home = () => (
           href='https://craft-supply-inventory.vercel.app/'
           image='csp.png'
           description='An early stage React app for keeping track of art and craft supplies.'
+          sourceCode='https://github.com/vholcomb/craft-supply-inventory'
           title='crafty-supply-inventory'
         />
         <ProjectCard

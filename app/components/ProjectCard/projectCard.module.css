@@ -24,6 +24,12 @@
   max-width: 30ch;
 }
 
+.sourceCode {
+  display: block;
+  padding-top: 12px;
+  text-decoration: underline;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

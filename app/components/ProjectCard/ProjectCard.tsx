@@ -6,30 +6,35 @@ type ProjectCardProps = {
   href: string
   image: string
   sameTab?: boolean
+  sourceCode?: string
   title: string
 }
 
-const ProjectCard = ({ description, href, image, sameTab = false, title }: ProjectCardProps) => {
+const ProjectCard = ({ description, href, image, sameTab = false, sourceCode, title }: ProjectCardProps) => {
   return (
-    <a
-      href={href}
-      className={styles.card}
-      target={sameTab ?  "" : "_blank"}
-      rel="noopener noreferrer"
-    >
-      <Image
-        className={styles.logo}
-        src={`/images/${image}`}
-        alt="Project image"
-        height={180}
-        width={180}
-        priority
-      />
-      <h3>
-        {title} <span>-&gt;</span>
-      </h3>
-      <p>{description}</p>
-    </a>
+    <div className={styles.card}>
+      <a
+        href={href}
+        target={sameTab ?  "" : "_blank"}
+        rel="noopener noreferrer"
+      >
+        <Image
+          className={styles.logo}
+          src={`/images/${image}`}
+          alt="Project image"
+          height={180}
+          width={180}
+          priority
+        />
+        <h3>
+          {title} <span>-&gt;</span>
+        </h3>
+        <p>{description}</p>
+      </a>
+      {sourceCode && (
+        <a className={styles.sourceCode} href={sourceCode} target="_blank">View Source</a>
+      )}
+    </div>
   )
 }
 
