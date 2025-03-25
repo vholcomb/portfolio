@@ -3,7 +3,7 @@ import styles from './page.module.css'
 import ProjectCard from './components/ProjectCard/ProjectCard'
 
 const Home = () => (
-  <main className={styles.main}>
+  <div className={styles.main}>
     <div className={styles.header}>
       <div>
         <h1>{`Hi! I'm Vicky Holcomb`}</h1>
@@ -66,6 +66,20 @@ const Home = () => (
           title='Two Trees Olive Oil Vue Project'
         />
         <ProjectCard
+          href='https://github.com/vholcomb/buy-and-sell'
+          image='buy-and-sell.png'
+          description='A full stack application using Angular, Node.js, Hapi, and MySQL. This is a work in progress.'
+          sourceCode='https://github.com/vholcomb/buy-and-sell-backend'
+          title='Buy and Sell Project'
+        />
+        {/* <ProjectCard
+          href='/os'
+          image='homepage.png'
+          description='See work done for my previous employer on the Online Services User Portal.'
+          sameTab
+          title='Online Services'
+        /> */}
+        <ProjectCard
           href='/civitas'
           image='civitas.png'
           description='See work done for my previous employer, specifically the planning and scheduling applications.'
@@ -93,7 +107,7 @@ const Home = () => (
         />
       </div>
     </div>
-  </main>
+  </div>
 )
 
 export default Home

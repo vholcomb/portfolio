@@ -5,7 +5,9 @@ const Layout = ({ children }: PropsWithChildren) => {
   return (
     <>
       <NavBar />
-      {children}
+      <main>
+        {children}
+      </main>
     </>
   );
 };
