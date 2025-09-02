@@ -11,7 +11,7 @@ const Home = () => (
           <div className={styles.description}>With over 13 years of full-stack software engineering experience, I specialize in building scalable, high-traffic applications that deliver accessible and seamless user experiences. I excel at tackling complex challenges, mentoring teams, and delivering innovative solutions that exceed expectations.</div>
           <Image
             priority
-            src="/images/profile.jpg"
+            src="/images/myAvatar.svg"
             className={styles.borderCircle}
             height={144}
             width={144}
